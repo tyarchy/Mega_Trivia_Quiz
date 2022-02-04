@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Trivia Quiz</title>
+    <link rel="stylesheet" href=.\assets\css.css>
+</head>
+
+<body>
+    <div class="container">
+        <div id="question-container">
+            <h2 id="qText"></h2>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn" onclick="here('Answer A')">Answer A</button>
+                <button class="btn" onclick="here('Answer B')">Answer B</button>
+                <button class="btn" onclick="here('Answer C')">Answer C</button>
+                <button class="btn" onclick="here('Answer D')">Answer D</button>
+            </div>
+        </div>
+        <div>
+
+
+        </div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn">Next</button>
+    
+        <div class="timer">
+            <span>00</span>
+        </div>
+    
+    </div>
+    
+    <div class="score">
+        <span id="right-answers"></span>  
+    </div>
+    
+    <script src="assets\js.js"></script>
+</body>
+
+</html>
