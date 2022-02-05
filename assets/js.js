@@ -37,7 +37,17 @@ var questions = [
       { text: "A: 13.5 billion years", correct: true },
       { text: "B: It cannot see back in time", correct: false },
       { text: "C: All the way back to the beginning", correct: false },
-      { text: "D: 22 billion years", correct: false },
+      { text: "D: 22 billion years", correct: false },      
+    ],
+  },
+  {
+    id: 5,
+    question: "Game Over Man, GAME OVER!",
+    answers: [
+      { text: "THE", correct: false },
+      { text: "GAME", correct: false },
+      { text: "IS", correct: true },
+      { text: "OVER!", correct: false },
     ],
   },
 ];
@@ -68,12 +78,14 @@ var answerbtns = document.querySelector(".btn");
 var nextBtn = document.getElementById("next-btn");
 var qCount = 0;
 var qId = 1;
-var time = 10;
+var time = 100;
 var counter;
 var score = 0;
 
 document.querySelector("#qText").innerHTML = questions[qCount].question;
 
+
+// wrong or right answers
 function here(arg) {
   if (arg == true) {
     document.body.setAttribute("style", "background-color: #08ff00c2;");
@@ -88,6 +100,11 @@ function here(arg) {
     qCount++;
     qId++;
     setPage();
+    
+    // End of quiz questions
+    if(qCount==4){
+      clearInterval(counter)
+    };
   }
 
 }
@@ -115,9 +132,11 @@ function setPage() {
 
 }
 
+// Starting the game
 var startButton = document
   .getElementById("start-btn")
   .addEventListener("click", function () {
+    this.disabled = true;
     setPage();
 
     counter = setInterval(function () {
@@ -127,9 +146,17 @@ var startButton = document
         console.log("TIMES UP");
         
 
+        
+
 
 
         clearInterval(counter);
+
+        
+    if(qCount==0){
+      clearInterval(counter)
+    };
+
       }
 
       time--;
@@ -140,6 +167,8 @@ var startButton = document
     nextBtn.onclick = () => {
      
     };
+
+    
   });
 
 // setInterval(function () { console.log("YOU LOSE!"); }, 30000);
