@@ -9,7 +9,7 @@
     <link rel="stylesheet" href=.\assets\css.css>
 </head>
 
-<body>
+<body style="background-color: #00e1ffc2;">
     <div class="container">
         <div id="question-container">
             <h2 id="qText"></h2>
@@ -27,16 +27,15 @@
         <button id="start-btn" class="start-btn btn">Start</button>
         <button id="next-btn" class="next-btn btn">Next</button>
     
-        <div class="timer">
-            <span>00</span>
-        </div>
+        <h3 class="timer" id="time">00</h3>
+        <h3 class="score" id="score">00</h3>
     
     </div>
     
     <div class="score">
         <span id="right-answers"></span>  
-    </div>
-    
+    </div>    
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="assets\js.js"></script>
 </body>
 
