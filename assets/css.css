@@ -1,5 +1,13 @@
 
-
+.header {
+    position: relative;
+    bottom: 240px;
+    left: 650px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-bottom: 80px;
+  }
 
 
 body {
@@ -8,17 +16,18 @@ body {
     display: flex;
     width: 100vw;
     height: 100vw;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background-color:#ff0000c2;
 }
 
 .container {
     width: 800px;
-    max-width: 80%;
+    max-width: 40%;
     background-color: rgb(98, 100, 182);
     border-radius: 10px;
     padding: 10px;
+    margin-right: 450px;
     box-shadow: 0 0 10px 2px;
 }
 
@@ -53,14 +62,15 @@ body {
 }
 
 .controls {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     
 }
 
 .timer {
+    display: inline-block;
     font-size: 5rem;
-    box-sizing: border-box      
+    box-sizing: border-box;
     
 }
