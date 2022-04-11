@@ -1,6 +1,7 @@
-Mega-Trivia-Quiz
-Description
-Mega-Trivia-Quiz is fun multiple choice quiz about the the James Webb telescope. The questions are as such to inform the user of the astronomical trivial breakthroughs the James Webb Telescope will tell us about the universe we live in.
+![image](h)
+
+![image]()
+
 # Mega-Trivia-Quiz
 
 ## Description
