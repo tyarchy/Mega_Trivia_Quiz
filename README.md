@@ -1,6 +1,5 @@
-![image](h)
 
-![image]()
+![image](https://user-images.githubusercontent.com/92496520/162646323-3b706323-fdc5-44f8-92a6-586c0f0a3725.png)
 
 # Mega-Trivia-Quiz
 
